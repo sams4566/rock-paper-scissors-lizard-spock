@@ -1,0 +1,16 @@
+#heading {
+    height: 100px;
+}
+
+#answer-area {
+    height: 300px;
+}
+
+#game-area {
+    background: url('../images/game-background.jpg') no-repeat center center;
+    height: 500px
+}
+
+h1 {
+    color: red
+}
