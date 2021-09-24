@@ -14,3 +14,43 @@
 h1 {
     color: red
 }
+
+#rock-button {
+    background: url('../images/rock.jpg') no-repeat center center;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border-color: white;
+}
+
+#paper-button {
+    background: url('../images/paper.jpg') no-repeat center center;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border-color: white;
+}
+
+#scissors-button {
+    background: url('../images/scissors.jpg') no-repeat center center;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border-color: white;
+}
+
+#lizard-button {
+    background: url('../images/lizard.jpg') no-repeat center center;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border-color: white;
+}
+
+#spock-button {
+    background: url('../images/spock.jpg') no-repeat center center;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    border-color: white;
+}
