@@ -10,6 +10,14 @@ h1 {
     height: 600px;
 }
 
+#user-section {
+
+}
+
+#computer-section {
+
+}
+
 #user-selection {
     height: 155px;
     width: 155px;
@@ -28,8 +36,14 @@ h1 {
 
 #game-area {
     background: url('../images/game-background.jpg') no-repeat center 0px;
-    height: 1000px;
+    height: 518px;
     width: 100%;
+}
+
+#button-area {
+    width: 518px;
+    height: 518px;
+    margin: 0 auto;
 }
 
 #rock-button {
@@ -38,8 +52,9 @@ h1 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    margin: 100px auto;
-
+    margin-top: 35px;
+    margin-left: 184px;
+    position: relative;
 }
 
 #paper-button {
