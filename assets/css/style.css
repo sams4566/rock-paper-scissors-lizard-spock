@@ -1,21 +1,32 @@
 #heading {
     height: 100px;
+    width: 518px;
+    margin: 0 auto;
 }
 
 h1 {
-    color: red
+    color: red;
+    text-align: center;
 }
 
 #answer-area {
-    height: 600px;
+    height: 220px;
+    width: 518px;
+    margin: 0 auto;
 }
 
 #user-section {
-
+    height: 220px;
+    width: 190px;
+    float: left;
+    display: inline-block;
 }
 
 #computer-section {
-
+    height: 220px;
+    width: 190px;
+    float: right;
+    display: inline-block;
 }
 
 #user-selection {
@@ -23,7 +34,27 @@ h1 {
     width: 155px;
     border-radius: 50%;
     background-color: red;
+    margin-left: px;
+}
+
+#user-score-h2 {
     float: left;
+    margin-top: px;
+    margin-left: px;
+}
+
+#result {
+    height: 220px;
+    width: 138px;
+    margin-top: px;
+    margin-right: ;
+    display: inline-block;
+}
+
+#result h2{
+    width: 138px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 #computer-selection {
@@ -31,7 +62,15 @@ h1 {
     width: 155px;
     border-radius: 50%;
     background-color: green;
+    margin-top: px;
+    margin-right: px;
     float: right;
+}
+
+#computer-score-h2 {
+    float: right;
+    margin-top: px;
+    margin-right: px;
 }
 
 #game-area {
@@ -63,9 +102,10 @@ h1 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    display: block;
-    margin: -30px auto 100px;
+    margin-top: -42px;
+    margin-right: 25px;
     float: right;
+    position: relative;
 }
 
 #scissors-button {
@@ -74,8 +114,8 @@ h1 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    display: block;
-    margin: 60px auto 0px;
+    margin-top: 135px;
+    margin-right: -96px;
     float: right;
 }
 
@@ -85,8 +125,8 @@ h1 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    display: block;
-    margin: 90px auto 0px;
+    margin-top: 135px;
+    margin-left: 87px;
     float: left;
 }
 
@@ -96,7 +136,7 @@ h1 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    display: block;
-    margin: 120px auto 0px;
+    margin-top: -331px;
+    margin-left: 28px;
     float: left;
 }
