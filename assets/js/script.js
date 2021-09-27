@@ -22,3 +22,38 @@ function runGame(userSelection) {
 
     points(result)
 }
+
+function points(result) {
+    function findWinner(selection[userSelection], selection[computerSelection]) {
+        if (selection[userSelection] === "rock") {
+            if (computerSelection === "rock") {
+                return [alert("You win!")];
+                increaseUserScore();
+            } else if (computerSelection === "paper") {
+                return [alert("You lose!")];
+                increaseComputerScore();
+            } else if (computerSelection === "scissors") {
+                return [alert("You win!")];
+                increaseUserScore();
+            } else if (computerSelection === "lizard") {
+                return [alert("You win!")];
+                increaseUserScore();
+            } else if (computerSelection === "spock") {
+                return [alert("You lose!")];
+                increaseComputerScore();
+            } else {
+                alert(`Unimplemented operator ${operator}`)
+                throw `Unimplemented operator ${operator}. Aborting!`;
+            }}
+    let winner = 
+}
+
+function increaseUserScore() {
+    let currentScore = parseInt(document.getElementById("user-score").innerText)
+    ++currentScore = document.getElementById("user-score").innerText;
+}
+
+function increaseComputerScore() {
+    let currentScore = document.getElementById("computer-score").innerText
+    ++currentScore = document.getElementById("computer-score").innerText;
+}
