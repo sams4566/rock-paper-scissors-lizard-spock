@@ -27,8 +27,14 @@ function runGame(userSelection) {
 function points(result) {
     if (result === "winner") {
         increaseUserScore()
-    } else {
+        winnerMessage()
+    } else if (result === "draw") {
+        drawMessage()
+    } else if (result === "lose") {
         increaseComputerScore()
+        loseMessage()
+    } else {
+        alert(`Abort`)
     }
 }
 
@@ -71,4 +77,19 @@ function increaseUserScore() {
 function increaseComputerScore() {
     let currentScore = parseInt(document.getElementById("computer-score").innerText)
         document.getElementById("computer-score").innerText = ++currentScore
+}
+
+function winnerMessage() {
+    let message = document.getElementById('result-message')
+    message.innerText = `You Win!`
+}
+
+function drawMessage() {
+    let message = document.getElementById('result-message')
+    message.innerText = `You Lose!`
+}
+
+function loseMessage() {
+    let message = document.getElementById('result-message')
+    message.innerText = `It's a draw`
 }

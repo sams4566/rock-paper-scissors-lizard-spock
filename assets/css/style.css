@@ -33,7 +33,6 @@ h1 {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    background-color: red;
     margin-left: px;
 }
 
@@ -61,7 +60,6 @@ h1 {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    background-color: green;
     margin-top: px;
     margin-right: px;
     float: right;
