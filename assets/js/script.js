@@ -24,42 +24,51 @@ function runGame(userSelection) {
     points(result)
 }
 
-function findWinner(userChoice, computerChoice) {
-    let userChoice = user-selection-image.getAttribute('alt')
-    let computerChoice = computer-selection-image.getAttribute('alt')
+function points(result) {
+    if (result === "winner") {
+        increaseUserScore()
+    } else {
+        increaseComputerScore()
+    }
+}
 
+function findWinner(userChoice, computerChoice) {
     if (userChoice === "rock") {
         if (computerChoice === "rock") {
-            alert("You win!");
-            increaseUserScore();
+            return "winner"
         } else if (computerChoice === "paper") {
-            alert("You lose!")
-            increaseComputerScore();
+            alert("You lose!");
         } else if (computerChoice === "scissors") {
-            alert("You win!");
-            increaseUserScore();
+            return winner
         } else if (computerChoice === "lizard") {
-            alert("You win!");
-            increaseUserScore();
+            return winner
         } else if (computerChoice === "spock") {
-            alert("You lose!")
-            increaseComputerScore();
+            alert("You lose!");
         } else {
             alert(`Abort`)
-            throw `Aborting!`;
-        }
-    } else {
-        alert(`Abort`)
-        throw `Aborting!`;
-    }
+        }}
+    if (userChoice === "paper") {
+        if (computerChoice === "rock") {
+            return "winner"
+        } else if (computerChoice === "paper") {
+            alert("You lose!");
+        } else if (computerChoice === "scissors") {
+            return winner
+        } else if (computerChoice === "lizard") {
+            return winner
+        } else if (computerChoice === "spock") {
+            alert("You lose!");
+        } else {
+            alert(`Abort`)
+        }}
 }
 
 function increaseUserScore() {
     let currentScore = parseInt(document.getElementById("user-score").innerText)
-        ++currentScore = document.getElementById("user-score").innerText;
+    document.getElementById("user-score").innerText = ++currentScore
 }
 
 function increaseComputerScore() {
-    let currentScore = document.getElementById("computer-score").innerText
-        ++currentScore = document.getElementById("computer-score").innerText;
+    let currentScore = parseInt(document.getElementById("computer-score").innerText)
+        document.getElementById("computer-score").innerText = ++currentScore
 }
