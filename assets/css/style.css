@@ -1,7 +1,8 @@
 #heading {
-    height: 100px;
+    height: 74px;
     width: 518px;
     margin: 0 auto;
+    background-color: white;
 }
 
 h1 {
@@ -39,6 +40,16 @@ h2 {
     margin-left: 20px;
 }
 
+#user-selection-image {
+    border-radius: 50%;
+}
+
+#user-background {
+    background-color: navy;
+    border-top: 2px solid navy;
+    border-right: 4px solid navy;
+}
+
 #user-score-h2 {
     float: left;
     margin-left: 35px;
@@ -71,6 +82,16 @@ h2 {
     border-radius: 50%;
     margin-right: 20px;
     float: right;
+}
+
+#computer-selection-image {
+    border-radius: 50%;
+}
+
+#computer-background {
+    background-color: navy;
+    border-top: 2px solid navy;
+    border-right: 4px solid navy;
 }
 
 #computer-score-h2 {
