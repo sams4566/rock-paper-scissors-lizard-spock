@@ -5,8 +5,18 @@
 }
 
 h1 {
-    color: red;
+    color: navy;
     text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: navy;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 0.75px;
+    
 }
 
 #answer-area {
@@ -22,24 +32,16 @@ h1 {
     display: inline-block;
 }
 
-#computer-section {
-    height: 220px;
-    width: 190px;
-    float: right;
-    display: inline-block;
-}
-
 #user-selection {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    margin-left: px;
+    margin-left: 20px;
 }
 
 #user-score-h2 {
     float: left;
-    margin-top: px;
-    margin-left: px;
+    margin-left: 35px;
 }
 
 #result {
@@ -56,19 +58,24 @@ h1 {
     text-align: center;
 }
 
+#computer-section {
+    height: 220px;
+    width: 190px;
+    float: right;
+    display: inline-block;
+}
+
 #computer-selection {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    margin-top: px;
-    margin-right: px;
+    margin-right: 20px;
     float: right;
 }
 
 #computer-score-h2 {
-    float: right;
-    margin-top: px;
-    margin-right: px;
+    float: left;
+    margin-left: 5px;
 }
 
 #game-area {

@@ -25,14 +25,14 @@ function runGame(userSelection) {
 }
 
 function points(result) {
-    if (result === "winner") {
+    if (result === "win") {
         increaseUserScore()
-        winnerMessage()
-    } else if (result === "draw") {
-        drawMessage()
+        winMessage()
     } else if (result === "lose") {
         increaseComputerScore()
         loseMessage()
+    } else if (result === "draw") {
+        drawMessage()
     } else {
         alert(`Abort`)
     }
@@ -41,29 +41,71 @@ function points(result) {
 function findWinner(userChoice, computerChoice) {
     if (userChoice === "rock") {
         if (computerChoice === "rock") {
-            return "winner"
+            return "draw"
         } else if (computerChoice === "paper") {
-            alert("You lose!");
+            return "lose"
         } else if (computerChoice === "scissors") {
-            return winner
+            return "win"
         } else if (computerChoice === "lizard") {
-            return winner
+            return "win"
         } else if (computerChoice === "spock") {
-            alert("You lose!");
+            return "lose"
         } else {
             alert(`Abort`)
         }}
     if (userChoice === "paper") {
         if (computerChoice === "rock") {
-            return "winner"
+            return "win"
         } else if (computerChoice === "paper") {
-            alert("You lose!");
+            return "draw"
         } else if (computerChoice === "scissors") {
-            return winner
+            return "lose"
         } else if (computerChoice === "lizard") {
-            return winner
+            return "lose"
         } else if (computerChoice === "spock") {
-            alert("You lose!");
+            return "win"
+        } else {
+            alert(`Abort`)
+        }}
+    if (userChoice === "scissors") {
+        if (computerChoice === "rock") {
+            return "lose"
+        } else if (computerChoice === "paper") {
+            return "win"
+        } else if (computerChoice === "scissors") {
+            return "draw"
+        } else if (computerChoice === "lizard") {
+            return "win"
+        } else if (computerChoice === "spock") {
+            return "lose"
+        } else {
+            alert(`Abort`)
+        }}
+    if (userChoice === "lizard") {
+        if (computerChoice === "rock") {
+            return "lose"
+        } else if (computerChoice === "paper") {
+            return "win"
+        } else if (computerChoice === "scissors") {
+            return "lose"
+        } else if (computerChoice === "lizard") {
+            return "draw"
+        } else if (computerChoice === "spock") {
+            return "win"
+        } else {
+            alert(`Abort`)
+        }}
+    if (userChoice === "spock") {
+        if (computerChoice === "rock") {
+            return "win"
+        } else if (computerChoice === "paper") {
+            return "lose"
+        } else if (computerChoice === "scissors") {
+            return "win"
+        } else if (computerChoice === "lizard") {
+            return "lose"
+        } else if (computerChoice === "spock") {
+            return "draw"
         } else {
             alert(`Abort`)
         }}
@@ -79,17 +121,17 @@ function increaseComputerScore() {
         document.getElementById("computer-score").innerText = ++currentScore
 }
 
-function winnerMessage() {
+function winMessage() {
     let message = document.getElementById('result-message')
     message.innerText = `You Win!`
 }
 
 function drawMessage() {
     let message = document.getElementById('result-message')
-    message.innerText = `You Lose!`
+    message.innerText = `Draw!`
 }
 
 function loseMessage() {
     let message = document.getElementById('result-message')
-    message.innerText = `It's a draw`
+    message.innerText = `You Lose!`
 }
