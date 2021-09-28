@@ -3,12 +3,14 @@ let selection = ["rock", "paper", "scissors", "lizard", "spock"];
 let userImage = document.getElementById("user-selection-image");
 let computerImage = document.getElementById("computer-selection-image");
 
-for (let button of buttons) {
-    button.addEventListener("click", function () {
-        let userSelection = this.getAttribute("data-type");
-        runGame(userSelection);
-    });
-}
+document.addEventListener("DOMContentLoaded", function() {
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            let userSelection = this.getAttribute("data-type");
+            runGame(userSelection);
+        });
+    }
+})
 
 function runGame(userSelection) {
     userImage.src = `assets/images/${selection[userSelection]}.jpg`;
