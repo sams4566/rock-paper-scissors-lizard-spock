@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     outOfFive.addEventListener("click", function () {
     let gameButtons = document.getElementsByClassName("gameButtons");
-    
+
+    outOfFive.remove();
+    outOfTen.remove();
+    arrowDown()
+
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
             let userSelection1 = this.getAttribute("data-type");
@@ -15,7 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     outOfTen.addEventListener("click", function () {
     let gameButtons = document.getElementsByClassName("gameButtons");
-    
+
+    outOfFive.remove();
+    outOfTen.remove();
+    arrowDown()
+
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
             let userSelection2 = this.getAttribute("data-type");
@@ -23,6 +31,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }})
 })
+
+function arrowDown() {
+    let userImage = document.getElementById("user-selection-image");
+    let computerImage = document.getElementById("computer-selection-image");
+    let chooseMessage = document.getElementById("result-message")
+    
+    userImage.src = `assets/images/${"arrow-down"}.jpg`;
+    userImage.alt = "Downward Arrow";
+
+    computerImage.src = `assets/images/${"arrow-down"}.jpg`;
+    computerImage.alt = "Downward Arrow";
+
+    chooseMessage.innerText = `Choose Below`
+}
 
 function runGame1(userSelection1) {
     let selection = ["rock", "paper", "scissors", "lizard", "spock"];
