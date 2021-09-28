@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     outOfFive.remove();
     outOfTen.remove();
-    arrowDown()
+    chooseMessage()
 
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     outOfFive.remove();
     outOfTen.remove();
-    arrowDown()
+    chooseMessage()
 
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
@@ -32,17 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }})
 })
 
-function arrowDown() {
-    let userImage = document.getElementById("user-selection-image");
-    let computerImage = document.getElementById("computer-selection-image");
-    let chooseMessage = document.getElementById("result-message")
-    
-    userImage.src = `assets/images/${"arrow-down"}.jpg`;
-    userImage.alt = "Downward Arrow";
-
-    computerImage.src = `assets/images/${"arrow-down"}.jpg`;
-    computerImage.alt = "Downward Arrow";
-
+function chooseMessage() {
+    let chooseMessage = document.getElementById("info-message")
     chooseMessage.innerText = `Choose Below`
 }
 
@@ -110,7 +101,7 @@ function increaseUserScore1() {
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
 
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     if (currentScore2 === 5) {
         location.reload();
     } else if (currentScore1 < 4) {
@@ -128,7 +119,7 @@ function increaseComputerScore1() {
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
 
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     
     if (currentScore1 === 5) {
         location.reload();
@@ -144,7 +135,7 @@ function increaseComputerScore1() {
 }
 
 function drawMessage1() {
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
 
@@ -162,7 +153,7 @@ function drawMessage1() {
 function increaseUserScore2() {
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
 
     if (currentScore2 === 10) {
         location.reload();
@@ -180,7 +171,7 @@ function increaseUserScore2() {
 function increaseComputerScore2() {
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     
     if (currentScore1 === 10) {
         location.reload();
@@ -196,7 +187,7 @@ function increaseComputerScore2() {
 }
 
 function drawMessage2() {
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     let currentScore1 = parseInt(document.getElementById("user-score").innerText);
     let currentScore2 = parseInt(document.getElementById("computer-score").innerText);
 
@@ -212,12 +203,12 @@ function drawMessage2() {
 }
 
 function winMessage() {
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     message.innerText = `You Win!`;
 }
 
 function loseMessage() {
-    let message = document.getElementById('result-message');
+    let message = document.getElementById('info-message');
     message.innerText = `You Lose!`;
 }
 
