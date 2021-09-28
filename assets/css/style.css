@@ -42,6 +42,41 @@ h2 {
 
 #user-selection-image {
     border-radius: 50%;
+
+}
+
+#outOfFive {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: absolute;
+    float: left;
+    margin-left: 0px;
+    color: navy;
+    text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+}
+
+#outOfTen {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: absolute;
+    float: left;
+    margin-left: 0px;
+    color: navy;
+    text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
 }
 
 #user-background {
@@ -61,38 +96,6 @@ h2 {
     margin-top: px;
     margin-right: ;
     display: inline-block;
-}
-
-#outOfFive {
-    color: white;
-    text-align: center;
-    font-family: 'Gemunu Libre', sans-serif;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-left: 13px;
-    height: 60px;
-    width: 110px;
-    background-color: rgba(28,30,81,0.7);
-    border: 5px solid lightgrey;
-    border-style: outset;
-}
-
-#outOfTen {
-    color: white;
-    text-align: center;
-    font-family: 'Gemunu Libre', sans-serif;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 42px;
-    margin-left: 13px;
-    height: 60px;
-    width: 110px;
-    background-color: rgba(28,30,81,0.7);
-    border: 5px solid lightgrey;
-    border-style: outset;
 }
 
 #result h2{
