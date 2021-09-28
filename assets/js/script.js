@@ -1,27 +1,43 @@
-let buttons = document.getElementsByTagName("button");
-let selection = ["rock", "paper", "scissors", "lizard", "spock"];
-let userImage = document.getElementById("user-selection-image");
-let computerImage = document.getElementById("computer-selection-image");
 
 document.addEventListener("DOMContentLoaded", function() {
-    for (let button of buttons) {
+    let outOfFive = document.getElementById("outOfTen")
+    let outOfTen = document.getElementById("outOfFive")
+
+    outOfFive.addEventListener("click", function () {
+    let gameButtons = document.getElementsByClassName("gameButtons");
+    
+    for (let button of gameButtons) {
         button.addEventListener("click", function () {
-            let userSelection = this.getAttribute("data-type");
-            runGame(userSelection);
+            let userSelection1 = this.getAttribute("data-type");
+            runGame(userSelection1);
         });
-    }
+    }})
+
+    outOfTen.addEventListener("click", function () {
+        let gameButtons = document.getElementsByClassName("gameButtons");
+        
+        for (let button of gameButtons) {
+            button.addEventListener("click", function () {
+                let userSelection2 = this.getAttribute("data-type");
+                runGame(userSelection2);
+            });
+        }})
 })
 
-function runGame(userSelection) {
-    userImage.src = `assets/images/${selection[userSelection]}.jpg`;
-    userImage.alt = selection[userSelection];
+function runGame(userSelection2,) {
+    let selection = ["rock", "paper", "scissors", "lizard", "spock"];
+    let userImage = document.getElementById("user-selection-image");
+    let computerImage = document.getElementById("computer-selection-image");
+
+    userImage.src = `assets/images/${selection[userSelection2]}.jpg`;
+    userImage.alt = selection[userSelection2];
 
     let computerSelection = Math.floor(Math.random() * 5);
 
     computerImage.src = `assets/images/${selection[computerSelection]}.jpg`;
     computerImage.alt = selection[computerSelection]
 
-    let result = findWinner(selection[userSelection], selection[computerSelection])
+    let result = findWinner(selection[userSelection2], selection[computerSelection])
 
     points(result)
 }
