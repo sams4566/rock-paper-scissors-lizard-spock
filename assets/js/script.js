@@ -113,12 +113,31 @@ function findWinner(userChoice, computerChoice) {
 
 function increaseUserScore() {
     let currentScore = parseInt(document.getElementById("user-score").innerText)
-    document.getElementById("user-score").innerText = ++currentScore
+    let message = document.getElementById('result-message')
+    
+    if (currentScore < 9) {
+        document.getElementById("user-score").innerText = ++currentScore
+    } else if (currentScore === 10) {
+        location.reload()
+    } else if (currentScore === 9) {
+        document.getElementById("user-score").innerText = ++currentScore
+        message.innerText = `You have won!`
+    }
 }
 
 function increaseComputerScore() {
     let currentScore = parseInt(document.getElementById("computer-score").innerText)
+    let message = document.getElementById('result-message')
+    
+    if (currentScore < 9) {
         document.getElementById("computer-score").innerText = ++currentScore
+        message.innerText = `You have lost!`
+    } else if (currentScore === 10) {
+        location.reload()
+    } else if (currentScore === 9) {
+        document.getElementById("computer-score").innerText = ++currentScore
+        message.innerText = `You have lost!`
+    }
 }
 
 function winMessage() {
@@ -128,7 +147,18 @@ function winMessage() {
 
 function drawMessage() {
     let message = document.getElementById('result-message')
-    message.innerText = `Draw!`
+    let currentScore1 = parseInt(document.getElementById("computer-score").innerText)
+    let currentScore2 = parseInt(document.getElementById("user-score").innerText)
+
+    if (currentScore1 === 10) {
+        location.reload()
+    } else if (currentScore2 === 10) {
+        location.reload()
+    } else if (currentScore1 < 10) {
+        message.innerText = `Draw!`
+    } else if (currentScore2 < 10) {
+        message.innerText = `Draw!`
+    }
 }
 
 function loseMessage() {

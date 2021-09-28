@@ -45,9 +45,9 @@ h2 {
 }
 
 #user-background {
-    background-color: navy;
-    border-top: 2px solid navy;
-    border-right: 4px solid navy;
+    background-color: rgba(28,30,81,255);
+    border-top: 2px solid rgba(28,30,81,255);
+    border-right: 4px solid rgba(28,30,81,255);
 }
 
 #user-score-h2 {
@@ -89,9 +89,9 @@ h2 {
 }
 
 #computer-background {
-    background-color: navy;
-    border-top: 2px solid navy;
-    border-right: 4px solid navy;
+    background-color: rgba(28,30,81,255);
+    border-top: 2px solid rgba(28,30,81,255);
+    border-right: 4px solid rgba(28,30,81,255);
 }
 
 #computer-score-h2 {
@@ -117,7 +117,7 @@ h2 {
     width: 155px;
     border-radius: 50%;
     border-color: white;
-    margin-top: 35px;
+    margin-top: 34px;
     margin-left: 184px;
     position: relative;
 }
