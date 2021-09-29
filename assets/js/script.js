@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 document.addEventListener("DOMContentLoaded", function() {
     let outOfFive = document.getElementById("outOfFive");
     let outOfTen = document.getElementById("outOfTen");
