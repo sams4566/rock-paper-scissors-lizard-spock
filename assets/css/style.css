@@ -53,7 +53,6 @@ h2 {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    margin-left: 20px;
     position: absolute;
     float: left;
     margin-left: 0px;
@@ -100,7 +99,6 @@ h2 {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    margin-left: 20px;
     position: absolute;
     float: left;
     margin-left: 0px;
@@ -207,4 +205,158 @@ h2 {
     margin-top: -331px;
     margin-left: 28px;
     float: left;
+}
+
+/* For small screens sizes from 560px wide and down */
+@media screen and (max-width: 560px) {
+
+    /* Heading */
+
+#heading {
+    height: 50px;
+    width: 290px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1 {
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+/* Answer Area */
+
+h2 {
+    letter-spacing: 0.75px;
+    font-size: 13.5px;
+}
+
+#answer-area {
+    height: 220px;
+    width: 290px;
+    margin: 0 auto;
+}
+
+#user-section {
+    height: 220px;
+    width: 106px;
+    float: left;
+    display: inline-block;
+}
+
+#user-selection {
+    height: 86px;
+    width: 86px;
+    margin-left: 20px;
+}
+
+#outOfFive {
+    height: 86px;
+    width: 86px;
+    margin-left: 0px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#user-score-h2 {
+    float: left;
+    margin-left: 35px;
+}
+
+#computer-section {
+    height: 220px;
+    width: 106px;
+    display: inline-block;
+}
+
+#computer-selection {
+    height: 86px;
+    width: 86px;
+    margin-right: 20px;
+    float: right;
+}
+
+#outOfTen {
+    height: 86px;
+    width: 86px;
+    margin-left: 0px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#computer-score-h2 {
+    float: left;
+    margin-left: 5px;
+}
+
+#info {
+    height: 220px;
+    width: 78px;
+    margin-top: px;
+    margin-right: ;
+    display: inline-block;
+}
+
+#info h2{
+    width: 78px;
+    text-align: center;
+    position: absolute;
+    margin-top: 65px;
+}
+
+/* Game Area */
+
+    #game-area {
+        background: url('../images/game-background1.jpg') no-repeat center 0px;
+        height: 290px;
+        width: 100%;
+    }
+
+    #button-area {
+        width: 290px;
+        height: 290px;
+        margin: 0 auto;
+    }
+
+    #rock-button {
+        background: url('../images/rock1.jpg') no-repeat center center;
+        height: 86px;
+        width: 86px;
+        margin-top: 19px;
+        margin-left: 103px;
+    }
+    
+    #paper-button {
+        background: url('../images/paper1.jpg') no-repeat center center;
+        height: 86px;
+        width: 86px;
+        margin-top: 83px;
+        margin-right: 14px;
+    }
+    
+    #scissors-button {
+        background: url('../images/scissors1.jpg') no-repeat center center;
+        height: 86px;
+        width: 86px;
+        margin-top: 77px;
+        margin-right: -53px;
+    }
+    
+    #lizard-button {
+        background: url('../images/lizard1.jpg') no-repeat center center;
+        height: 86px;
+        width: 86px;
+        margin-top: 77px;
+        margin-left: 50px;
+    }
+    
+    #spock-button {
+        background: url('../images/spock1.jpg') no-repeat center center;
+        height: 86px;
+        width: 86px;
+        margin-top: -185px;
+        margin-left: 16px;
+    }
 }
