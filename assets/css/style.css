@@ -250,6 +250,10 @@ h2 {
     margin-left: 10px;
 }
 
+#user-selection-image {
+    height: 86px;
+}
+
 #outOfFive {
     height: 86px;
     width: 86px;
@@ -276,6 +280,10 @@ h2 {
     width: 86px;
     margin-right: 10px;
     float: right;
+}
+
+#computer-selection-image {
+    height: 86px;
 }
 
 #outOfTen {
