@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 
 document.addEventListener("DOMContentLoaded", function() {
     let outOfFive = document.getElementById("outOfFive");
@@ -15,26 +16,26 @@ document.addEventListener("DOMContentLoaded", function() {
             let userSelection1 = this.getAttribute("data-type");
             runGame1(userSelection1);
         });
-    }})
+    }});
 
     outOfTen.addEventListener("click", function () {
     let gameButtons = document.getElementsByClassName("gameButtons");
 
     outOfFive.remove();
     outOfTen.remove();
-    chooseMessage()
+    chooseMessage();
 
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
             let userSelection2 = this.getAttribute("data-type");
             runGame2(userSelection2);
         });
-    }})
-})
+    }});
+});
 
 function chooseMessage() {
-    let chooseMessage = document.getElementById("info-message")
-    chooseMessage.innerText = `Choose Below`
+    let chooseMessage = document.getElementById("info-message");
+    chooseMessage.innerText = `Choose Below`;
 }
 
 function runGame1(userSelection1) {
@@ -111,7 +112,9 @@ function increaseUserScore1() {
         location.reload();
     } else if (currentScore1 === 4) {
         document.getElementById("user-score").innerText = ++currentScore1;
-        message.innerText = `You have won!`;
+        message.innerText = `You win!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
@@ -130,7 +133,9 @@ function increaseComputerScore1() {
         location.reload();
     } else if (currentScore2 === 4) {
         document.getElementById("computer-score").innerText = ++currentScore2;
-        message.innerText = `You have lost!`;
+        message.innerText = `Computer Wins!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
@@ -147,6 +152,8 @@ function drawMessage1() {
         message.innerText = `Draw!`;
     } else if (currentScore2 < 5) {
         message.innerText = `Draw!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
@@ -164,7 +171,9 @@ function increaseUserScore2() {
         location.reload();
     } else if (currentScore1 === 9) {
         document.getElementById("user-score").innerText = ++currentScore1;
-        message.innerText = `You have won!`;
+        message.innerText = `You Win!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
@@ -182,7 +191,9 @@ function increaseComputerScore2() {
         location.reload();
     } else if (currentScore2 === 9) {
         document.getElementById("computer-score").innerText = ++currentScore2;
-        message.innerText = `You have lost!`;
+        message.innerText = `Computer Wins!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
@@ -199,17 +210,19 @@ function drawMessage2() {
         message.innerText = `Draw!`;
     } else if (currentScore2 < 10) {
         message.innerText = `Draw!`;
+    } else {
+        alert(`Abort`);
     }
 }
 
 function winMessage() {
     let message = document.getElementById('info-message');
-    message.innerText = `You Win!`;
+    message.innerText = `Well done!`;
 }
 
 function loseMessage() {
     let message = document.getElementById('info-message');
-    message.innerText = `You Lose!`;
+    message.innerText = `Unlucky`;
 }
 
 function findWinner(userChoice, computerChoice) {
