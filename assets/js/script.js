@@ -6,7 +6,7 @@
  * two streams, one for each game.
  */
 
-document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     let outOfFive = document.getElementById("outOfFive");
     let outOfTen = document.getElementById("outOfTen");
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     outOfFive.remove();
     outOfTen.remove();
-    chooseMessage()
+    chooseMessage();
 
     for (let button of gameButtons) {
         button.addEventListener("click", function () {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function chooseMessage() {
     let chooseMessage = document.getElementById("info-message");
-    chooseMessage.innerText = `Choose Below`;
+    chooseMessage.innerText = `Choose below to start`;
 }
 
 /**
@@ -117,15 +117,15 @@ function findWinner(userChoice, computerChoice) {
         }}
     if (userChoice === "paper") {
         if (computerChoice === "rock") {
-            return "win"
+            return "win";
         } else if (computerChoice === "paper") {
-            return "draw"
+            return "draw";
         } else if (computerChoice === "scissors") {
-            return "lose"
+            return "lose";
         } else if (computerChoice === "lizard") {
-            return "lose"
+            return "lose";
         } else if (computerChoice === "spock") {
-            return "win"
+            return "win";
         } else {
             alert(`Abort`);
         }}
