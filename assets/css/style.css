@@ -216,7 +216,6 @@ h2 {
     height: 50px;
     width: 290px;
     margin: 0 auto;
-    background-color: white;
 }
 
 h1 {
@@ -257,8 +256,6 @@ h2 {
 #outOfFive {
     height: 86px;
     width: 86px;
-    margin-left: 0px;
-    letter-spacing: 0.5px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -289,8 +286,6 @@ h2 {
 #outOfTen {
     height: 86px;
     width: 86px;
-    margin-left: 0px;
-    letter-spacing: 0.5px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -305,13 +300,11 @@ h2 {
     height: 220px;
     width: 78px;
     margin-top: px;
-    margin-right: ;
     display: inline-block;
 }
 
 #info h2{
     width: 78px;
-    text-align: center;
     position: absolute;
     margin-top: 38px;
 }
@@ -336,8 +329,9 @@ h2 {
         background-size: 86px;
         height: 86px;
         width: 86px;
-        margin-top: -60px;
+        margin-top: -80px;
         margin-left: 103px;
+        float: left;
     }
     
     #paper-button {
@@ -345,8 +339,9 @@ h2 {
         background-size: 86px;
         height: 86px;
         width: 86px;
-        margin-top: 83px;
+        margin-top: -16px;
         margin-right: 14px;
+        float: right;
     }
     
     #scissors-button {
@@ -356,6 +351,7 @@ h2 {
         width: 86px;
         margin-top: 77px;
         margin-right: -53px;
+        float: right;
     }
     
     #lizard-button {
@@ -365,6 +361,7 @@ h2 {
         width: 86px;
         margin-top: 77px;
         margin-left: 50px;
+        float: left;
     }
     
     #spock-button {
@@ -372,7 +369,8 @@ h2 {
         background-size: 86px;
         height: 86px;
         width: 86px;
-        margin-top: -185px;
-        margin-left: 16px;
+        margin-top: -22px;
+        margin-left: -120px;
+        float: left;
     }
 }
