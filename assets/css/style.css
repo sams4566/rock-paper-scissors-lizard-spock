@@ -66,9 +66,9 @@ h2 {
 }
 
 #user-background {
-    background-color: rgba(28,30,81,255);
-    border-top: 2px solid rgba(28,30,81,255);
-    border-right: 4px solid rgba(28,30,81,255);
+    background-color: rgba(28,30,81);
+    border-top: 2px solid rgba(28,30,81);
+    border-right: 4px solid rgba(28,30,81);
 }
 
 #user-score-h2 {
@@ -112,9 +112,9 @@ h2 {
 }
 
 #computer-background {
-    background-color: rgba(28,30,81,255);
-    border-top: 2px solid rgba(28,30,81,255);
-    border-right: 4px solid rgba(28,30,81,255);
+    background-color: rgba(28,30,81);
+    border-top: 2px solid rgba(28,30,81);
+    border-right: 4px solid rgba(28,30,81);
 }
 
 #computer-score-h2 {
@@ -125,8 +125,6 @@ h2 {
 #info {
     height: 220px;
     width: 138px;
-    margin-top: px;
-    margin-right: ;
     display: inline-block;
 }
 
@@ -299,7 +297,6 @@ h2 {
 #info {
     height: 220px;
     width: 78px;
-    margin-top: px;
     display: inline-block;
 }
 
