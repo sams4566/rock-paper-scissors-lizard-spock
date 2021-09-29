@@ -42,12 +42,12 @@ function runGame1(userSelection1) {
     let userImage = document.getElementById("user-selection-image");
     let computerImage = document.getElementById("computer-selection-image");
 
-    userImage.src = `assets/images/${selection[userSelection1]}.jpg`;
+    userImage.srcset = `assets/images/${selection[userSelection1]}.jpg`;
     userImage.alt = selection[userSelection1];
 
     let computerSelection = Math.floor(Math.random() * 5);
 
-    computerImage.src = `assets/images/${selection[computerSelection]}.jpg`;
+    computerImage.srcset = `assets/images/${selection[computerSelection]}.jpg`;
     computerImage.alt = selection[computerSelection];
 
     let result1 = findWinner(selection[userSelection1], selection[computerSelection]);
@@ -60,12 +60,12 @@ function runGame2(userSelection2) {
     let userImage = document.getElementById("user-selection-image");
     let computerImage = document.getElementById("computer-selection-image");
 
-    userImage.src = `assets/images/${selection[userSelection2]}.jpg`;
+    userImage.srcset = `assets/images/${selection[userSelection2]}.jpg`;
     userImage.alt = selection[userSelection2];
 
     let computerSelection = Math.floor(Math.random() * 5);
 
-    computerImage.src = `assets/images/${selection[computerSelection]}.jpg`;
+    computerImage.srcset = `assets/images/${selection[computerSelection]}.jpg`;
     computerImage.alt = selection[computerSelection];
 
     let result2 = findWinner(selection[userSelection2], selection[computerSelection]);

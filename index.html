@@ -23,7 +23,12 @@
             <div id="user-selection">
                 <div id="user-background">
                     <button aria-label="First to 5 game" id="outOfFive">First to 5</button>
-                    <img id="user-selection-image" alt="Downward Arrow" srcset="assets/images/arrow-down1 86w, assets/images/arrow-down.jpg 155w" sizes="(max-width: 560px) 86px, 155px" src="assets/images/arrow-down.jpg">
+                    <!-- <picture>
+                        <source media="(max-width: 560px)" srcset="assets/images/arrow-down1.jpg">
+                        <source media="(min-width: 561px)" srcset="assets/images/arrow-down.jpg">
+                        <img src="assets/images/arrow-down.jpg" id="user-selection-image" alt="Downward Arrow">
+                      </picture> -->
+                    <img id="user-selection-image" alt="Downward Arrow" srcset="assets/images/arrow-down1.jpg 86w, assets/images/arrow-down.jpg 155w" sizes="(max-width: 560px) 86px, 155px" src="assets/images/arrow-down.jpg">
                 </div>
             </div>
             <h2 id="user-score-h2">Your Score: <span id="user-score">0</span></h2>
@@ -37,7 +42,12 @@
             <div id="computer-selection">
                 <div id="computer-background">
                     <button aria-label="First to 10 game" id="outOfTen">First to 10</button>
-                    <img id="computer-selection-image" alt="Downward Arrow" srcset="assets/images/arrow-down1 86w, assets/images/arrow-down.jpg 155w" sizes="(max-width: 560px) 86px, 155px" src="assets/images/arrow-down.jpg">
+                    <picture>
+                        <source media="(max-width: 560px)" srcset="assets/images/arrow-down1.jpg" id="computer-selection-image">
+                        <source media="(min-width: 561px)" srcset="assets/images/arrow-down.jpg" id="computer-selection-image">
+                        <img src="assets/images/arrow-down1.jpg" alt="Downward Arrow">
+                      </picture>
+                    <!-- <img id="computer-selection-image" alt="Downward Arrow" srcset="assets/images/arrow-down1 86w, assets/images/arrow-down.jpg 155w" sizes="(max-width: 560px) 86px, (max-width: 1300px) 155px" src="assets/images/arrow-down.jpg"> -->
                 </div>
             </div>
             <h2 id="computer-score-h2">Computer Score: <span id="computer-score">0</span></h2>
