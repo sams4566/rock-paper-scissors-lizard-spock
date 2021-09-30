@@ -71,7 +71,7 @@ The game is designed in a way to make it easy to understand the new rules along 
 ### Bugs
 #### Solved Bugs 
 
-- On Safari, the computer’s score was being covered by the game area background for smaller screen sizes. The below photo shows the issue that was occurring: 
+- On Safari, the computer’s score was being partially covered by the game area background for smaller screen sizes. The below photo shows the issue that was occurring: 
 
   ![Bug1](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/bug1.jpg)
 

@@ -116,6 +116,7 @@ h2 {
 
 .computer-score-h2 {
     float: left;
+    margin-left: -5px;
 }
 
 #info {
