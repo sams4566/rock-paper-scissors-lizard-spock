@@ -74,14 +74,13 @@ __
 
 - On Safari, the computer’s score was being covered by the game area background for smaller screen sizes. The below photo shows the issue that was occurring: 
 
-
-  ![Validator](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-statistics.jpg)
+  ![Bug1](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/bug1.jpg)
 
   This was resolved by decreasing the line spacing and increasing the margin.
 
 - The JSHint Validator was producing large numbers of the below errors:
 
-  ![Validator](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-statistics.jpg)
+  ![Bug2](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/bug2.jpg)
 
   This was resolved through adding /*jshint esversion: 6 */ at the top of my script.js file as advised through the following website - https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const 
 
