@@ -20,8 +20,7 @@ h1 {
 h2 {
     color: navy;
     font-family: 'Gemunu Libre', sans-serif;
-    /* letter-spacing: 0.75px; */
-    letter-spacing: 2px; 
+    letter-spacing: 0.75px;
 }
 
 #answer-area {
@@ -117,8 +116,6 @@ h2 {
 
 .computer-score-h2 {
     float: left;
-    /* margin-left: 0px; */
-    margin-left: 20px;
 }
 
 #info {

@@ -4,7 +4,7 @@ The Rock, Paper, Scissors, Lizard, Spock game concept was recently popularised t
 
 The game is designed in a way to make it easy to understand the new rules along with having different game options so the user is challenged to progress to the next stage. The site is targeted at children and young people as they are ones most likely to play the original game. The page’s design should also make it easy for children and young people to remember how to play with their friends outside of the site.
 
-![Am I Responsive Mockup](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-screens.jpg)
+![Am I Responsive Mockup](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/bug2.jpg)
 
 ## Features
 - __Header__
@@ -12,7 +12,7 @@ The game is designed in a way to make it easy to understand the new rules along 
   - Featured at the top of the page the heading clearly displays the name of the game in bold, uppercase letters allowing the user to quickly establish what the page is about.
   - The header is navy to keep in line with the pages blue and white theme.
 
-![__Header__](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-nav.jpg)
+![__Header__](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/header.jpg)
 
 - __Game Options__
 
@@ -20,13 +20,13 @@ The game is designed in a way to make it easy to understand the new rules along 
   - The background of each game option is turquoise so that they stand out when the user first enters the site. 
   - The ‘Choose game’ message in the middle makes it clear that the user has to complete a step before the game starts. 
 
-![Game Options](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-portrait.jpg)
+![Game Options](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/game-options.jpg)
 
 - __‘Choose below to start’ Message__
   - The ‘Choose below to start’ message alongside the downward arrows are activated after the user has clicked their desired game option. 
   - The arrows highlight that the user has to click one of the five option buttons to start the game against the computer.
 
-![‘Choose below to start’ Message](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-facts.jpg)
+![Choose below](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/choose-below.jpg)
 
 - __The Game Area__
 __
@@ -34,7 +34,7 @@ __
   - Each button has a caption and a picture of the hand gesture that goes with each option - this makes it easier for users to remember how to play the game with their friend outside the site. 
   - The arrows in the middle and around the perimeter of the pentagon help users understand what option wins and loses against the others, for example, that rock beats lizard and scissors but loses against paper and spock.
 
-![The Game Area](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-video.jpg)
+![The Game Area](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/game-area.jpg)
 
 - __Collecting Points__
   - After the user has clicked one of the five options their choice is displayed in the top left box where the downward arrows used to be. 
@@ -42,13 +42,13 @@ __
   - A point will then be awarded to either the user or computer and will be added to their previous score.
   - A message of ‘Well done!’ will be displayed if the user wins the point and a message of ‘Unlucky’ will be displayed if the computer wins.
 
-![Collecting Points](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-footer.jpg)
+![Collecting Points](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/collecting-points.jpg)
 
 - __Announcing Winner__
   - Once the user or computer reaches 5 or 10 points (depending on the game) the message will display either ‘You Win! Or ‘Computer Wins’. 
   - The user can then either click on one of the five game options to refresh the page or refresh their browser to start the game again. 
 
-![Announcing Winner](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-early-life.jpg)
+![Announcing Winner](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/announcing-winner.jpg)
 
 - __Future features__
   - Future features would include having an option to play against a friend on the same device and online. I would also add a tally highlighting how many games each player has won instead of the page refreshing at the end of every game.
@@ -67,7 +67,7 @@ __
 - Accessibility
   - The web page was tested through Lighthouse in developer tools and confirmed a high level of accessibility
 
-![Validator](https://github.com/sams4566/winston-churchill-biography/blob/main/media/winston-churchill-biography-statistics.jpg)
+![Accessibility](https://github.com/sams4566/winston-churchill-biography/blob/main/media/accessibility.jpg)
 
 ### Bugs
 #### Solved Bugs 
