@@ -4,7 +4,7 @@ The Rock, Paper, Scissors, Lizard, Spock game concept was recently popularised t
 
 The game is designed in a way to make it easy to understand the new rules along with having different game options so the user is challenged to progress to the next stage. The site is targeted at children and young people as they are ones most likely to play the original game. The page’s design should also make it easy for children and young people to remember how to play with their friends outside of the site.
 
-![Am I Responsive Mockup](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/bug2.jpg)
+![Am I Responsive Mockup](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/am-i-responsive.jpg)
 
 ## Features
 - __Header__
@@ -59,15 +59,15 @@ __
 
 ### Validator Testing
 - HTML
-  - No errors were returned when passing through the official [W3C Validator](#######################################)
+  - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsams4566.github.io%2Frock-paper-scissors-lizard-spock%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) Validator](##################################)
+  - No errors were found when passing through the official [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsams4566.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
-  - No significant issues were found when passing through the [JSHint JavaScript Validator](##################################)
+  - No significant issues were found when passing through the JSHint JavaScript Validator
 - Accessibility
   - The web page was tested through Lighthouse in developer tools and confirmed a high level of accessibility
 
-![Accessibility](https://github.com/sams4566/winston-churchill-biography/blob/main/media/accessibility.jpg)
+![Accessibility](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/accessibility.jpg)
 
 ### Bugs
 #### Solved Bugs 
