@@ -20,7 +20,8 @@ h1 {
 h2 {
     color: navy;
     font-family: 'Gemunu Libre', sans-serif;
-    letter-spacing: 0.75px;
+    /* letter-spacing: 0.75px; */
+    letter-spacing: 2px; 
 }
 
 #answer-area {
@@ -43,6 +44,12 @@ h2 {
     margin-left: 20px;
 }
 
+#user-background {
+    background-color: rgba(28,30,81);
+    border-top: 2px solid rgba(28,30,81);
+    border-right: 4px solid rgba(28,30,81);
+}
+
 #user-selection-image {
     border-radius: 50%;
 
@@ -54,7 +61,6 @@ h2 {
     border-radius: 50%;
     position: absolute;
     float: left;
-    margin-left: 0px;
     color: navy;
     text-align: center;
     font-family: 'Gemunu Libre', sans-serif;
@@ -64,13 +70,7 @@ h2 {
     background-color: #B2FFFF;
 }
 
-#user-background {
-    background-color: rgba(28,30,81);
-    border-top: 2px solid rgba(28,30,81);
-    border-right: 4px solid rgba(28,30,81);
-}
-
-#user-score-h2 {
+.user-score-h2 {
     float: left;
     margin-left: 35px;
 }
@@ -90,6 +90,12 @@ h2 {
     float: right;
 }
 
+#computer-background {
+    background-color: rgba(28,30,81);
+    border-top: 2px solid rgba(28,30,81);
+    border-right: 4px solid rgba(28,30,81);
+}
+
 #computer-selection-image {
     border-radius: 50%;
 }
@@ -100,7 +106,6 @@ h2 {
     border-radius: 50%;
     position: absolute;
     float: left;
-    margin-left: 0px;
     color: navy;
     text-align: center;
     font-family: 'Gemunu Libre', sans-serif;
@@ -110,15 +115,10 @@ h2 {
     background-color: #B2FFFF;
 }
 
-#computer-background {
-    background-color: rgba(28,30,81);
-    border-top: 2px solid rgba(28,30,81);
-    border-right: 4px solid rgba(28,30,81);
-}
-
-#computer-score-h2 {
+.computer-score-h2 {
     float: left;
-    margin-left: -0px;
+    /* margin-left: 0px; */
+    margin-left: 20px;
 }
 
 #info {
@@ -257,7 +257,7 @@ h2 {
     font-size: 12px;
 }
 
-#user-score-h2 {
+.user-score-h2 {
     float: left;
     margin-left: 18px;
     margin-top: 12px;
@@ -287,7 +287,7 @@ h2 {
     font-size: 12px;
 }
 
-#computer-score-h2 {
+.computer-score-h2 {
     float: left;
     margin-left: -5px;
     margin-top: 12px;
