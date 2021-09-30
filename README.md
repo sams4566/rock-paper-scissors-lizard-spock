@@ -22,14 +22,13 @@ The game is designed in a way to make it easy to understand the new rules along 
 
 ![Game Options](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/game-options.jpg)
 
-- __‘Choose below to start’ Message__
+- __Starting the Game__
   - The ‘Choose below to start’ message alongside the downward arrows are activated after the user has clicked their desired game option. 
   - The arrows highlight that the user has to click one of the five option buttons to start the game against the computer.
 
-![Choose below](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/choose-below.jpg)
+![Starting the Game](https://github.com/sams4566/rock-paper-scissors-lizard-spock/blob/main/media/starting-the-game.jpg)
 
 - __The Game Area__
-__
   - The game area has the five options (Rock, Paper, Scissors, Lizard, Spock) as buttons  layed out in a pentagon.
   - Each button has a caption and a picture of the hand gesture that goes with each option - this makes it easier for users to remember how to play the game with their friend outside the site. 
   - The arrows in the middle and around the perimeter of the pentagon help users understand what option wins and loses against the others, for example, that rock beats lizard and scissors but loses against paper and spock.
@@ -63,7 +62,7 @@ __
 - CSS
   - No errors were found when passing through the official [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsams4566.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
-  - No significant issues were found when passing through the JSHint JavaScript Validator
+  - No significant issues were found when passing through the [JSHint JavaScript Validator](https://jshint.com/)
 - Accessibility
   - The web page was tested through Lighthouse in developer tools and confirmed a high level of accessibility
 
